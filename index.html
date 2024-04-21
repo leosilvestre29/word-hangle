@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Jogo da Forca</title>
+  </head>
+  <body>
+    <main class="gameBox">
+      <div class="wrongLetters">
+        <h3>Letras Erradas:</h3>
+        <div id="wrongLetters"></div>
+        <h3 id="errors">Erros: 0</h3>
+      </div>
+      <section class="game">
+        <div class="words" id="wordDisplay"></div>
+        <div class="inputLetter">
+          <input type="text" id="inputLetter" autocomplete="off" maxlength="1" />
+        </div>
+        <div class="buttons">
+          <button id="verifyButton" onclick="verifyButton()">Verificar</button>
+          <button id="resetGame" onclick="resetGame()">Reiniciar</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
